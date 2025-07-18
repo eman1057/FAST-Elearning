@@ -1,0 +1,83 @@
+/* About Us Page Styles */
+.about-us-container {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Welcome Section */
+  .about-us-section {
+    text-align: center;
+    padding: 100px 20px;
+    color: #c7a5b4;
+    background: 
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('../assets/AboutUs5.jpg') no-repeat center center/cover;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .about-us-section h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .about-us-section p {
+    color: #fff;
+    font-size: 1.2em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Description Section */
+  .about-description {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 20px;
+    gap: 30px;
+  }
+  
+  .left-column, .right-column {
+    width: 48%;
+    color: #333;
+  }
+  
+  .left-column h2, .right-column h2 {
+    font-size: 2em;
+    color: #756464;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  
+  .left-column p, .right-column p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: justify;
+    color: #555;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 1.2em;
+  }
+  
+  .footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  

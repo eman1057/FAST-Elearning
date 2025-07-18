@@ -1,0 +1,35 @@
+.rating-page {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .stars {
+    font-size: 24px;
+    cursor: pointer;
+    margin: 10px 0;
+  }
+  
+  .stars .filled {
+    color: gold;
+  }
+  
+  .submit-rating {
+    padding: 10px 20px;
+    margin-top: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .submit-rating:hover {
+    background-color: #0056b3;
+  }
+  
+  .message {
+    margin-top: 10px;
+    font-size: 16px;
+    color: green;
+  }
+  

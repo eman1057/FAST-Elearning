@@ -1,0 +1,111 @@
+/* Base Container */
+.base-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full screen height */
+    width: 190vh;
+    background: linear-gradient(135deg, #f0f4ff, #c8e8f8); /* New color scheme */
+    padding: 20px;
+}
+
+/* Login Container */
+.login-container {
+    display: flex;
+    width: 90%; /* Adjusted width */
+    height: 600px; /* Increased height */
+    align-items: stretch;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Prevent content overflow */
+}
+
+.login-form {
+    width: 50%; /* Equal width to the image */
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.login-form h2 {
+    color: black; /* Darker text color */
+    text-align: center; /* Center the text horizontally */
+    margin-top: 50px; /* Move the text down */
+    margin-bottom: 20px; /* Space between the text and the form fields */
+    font-size: 2.9rem; /* Increased font size */
+    font-weight: bold; /* Make the text bold */
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 30px; /* Increased spacing between fields */
+    position: relative; /* For hover effect */
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:hover {
+    border-color: #6a5acd; /* Soft hover border */
+    box-shadow: 0 0 8px rgba(106, 90, 205, 0.5); /* Subtle glow */
+}
+
+/* Error Message */
+.error {
+    color: red;
+    margin-top: 10px;
+}
+
+/* Login Button */
+.login-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #6a5acd; /* Purple color */
+    color: white;
+    border: none;
+    border-radius: 20px; /* Rounded button */
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.login-button:hover {
+    background-color: #543e9e;
+    transform: scale(1.05);
+}
+
+/* Signup Message */
+.signup-message {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.signup-link {
+    color: #6a5acd;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.signup-link:hover {
+    color: #543e9e;
+}
+
+/* Image Container Styling */
+.login-image-container {
+    width: 50%; /* Same width as the login window */
+    background-color: #f4f9ff; /* Slightly different background */
+    background-image: url('../assets/Login.png'); /* Set the background image */
+    background-size: contain; /* Ensure the image fits neatly */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+}

@@ -1,0 +1,112 @@
+/* General container styles */
+.coursematerial-container {
+    width: 80%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .coursematerial-heading {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-weight: bold;
+    color: #5e4545;
+    text-decoration: underline;
+  }
+  
+  /* Upload button styles */
+  .upload-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #28a745;
+    color: white;
+    font-size: 24px;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .upload-btn:hover {
+    background-color: #218838;
+  }
+  
+  /* Material list styles */
+  .coursematerial-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+  }
+  
+  /* Material box styles */
+  .coursematerial-box {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: calc(33.333% - 20px);
+    height: 220px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+  
+  .coursematerial-box:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+  }
+  
+  /* File container inside each material box */
+  .coursematerial-file {
+    width: 100%;
+    height: 170px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .coursematerial-title {
+    margin: 10px 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Delete button styles */
+  .delete-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 1px;
+    cursor: pointer;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c82333;
+  }
+  
+  /* PDF and image file specific styles */
+  .pdf-file {
+    background-image: url("../assets/pdficon.jpeg");
+  }
+  
+  .image-file {
+    background-size: cover;
+    background-position: center;
+  }
+  

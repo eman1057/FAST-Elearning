@@ -1,0 +1,104 @@
+/* Contact Us Page Styles */
+.contact-us-container {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Welcome Section */
+.contact-header {
+    text-align: center;
+    padding: 80px 20px;
+    color: #fff;
+    background: 
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('../assets/Contact3.jpg') no-repeat center center/cover;
+    background-size: cover;
+    position: relative;
+    height: 250px;
+}
+
+.contact-header h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.contact-header p {
+    color: #ddd;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Contact Details Section */
+.contact-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 80px 20px;
+    background-color: #ffffff; /* Set to plain white */
+}
+
+.contact-box {
+    width: 40%;
+    padding: 20px;
+    background: #f4e4e4; /* Matching the box color from Alumni.css */
+    border: 1px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+.contact-box h2 {
+    font-size: 2em; /* Increased font size for h2 */
+    color: #333; /* Matching text color from Alumni.css */
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: 700; /* Made the text bolder */
+}
+
+.contact-box h3 {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555; /* Matching text color from Alumni.css */
+    margin-bottom: 15px;
+}
+
+.contact-box p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Icons */
+.contact-icon {
+    font-size: 2.5em; /* Adjust icon size */
+    color: #357ecb; /* Add a color to the icons */
+    margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}

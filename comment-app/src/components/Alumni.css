@@ -1,0 +1,168 @@
+/* Alumni Page Styles */
+.alumni-container {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Section */
+.alumni-header {
+  text-align: center;
+  padding: 80px 20px;
+  color: #fff;
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../assets/Alumini3.jpg') no-repeat center center/cover;
+  background-size: cover;
+  position: relative;
+  height: 250px;
+}
+
+.alumni-header h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.alumni-header p {
+  color: #ddd;
+  font-size: 1.5em;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.alumni-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 80px 20px;
+  background-color: #ffffff; /* Set to plain white */
+}
+
+/* Description Section */
+.alumni-description {
+  padding: 80px 20px;
+  font-size: 1.5em;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* Alumni Content Section */
+.alumni-content {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.alumni-row {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+/* Alumni Boxes */
+.alumni-box {
+  background: #f4e4e4;
+  border: 1px solid #fff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  width: 40%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.alumni-box.large-box {
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Alumni Box Headings */
+.alumni-box h3 {
+  font-size: 1.6em;
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.alumni-box p {
+  font-size: 1em;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Alumni Image Circles */
+.alumni-image {
+  margin: 0 auto;
+  font-size: 1.5em;
+  color: #fff;
+  background: #454445;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.alumni-image.small-circle {
+  width: 80px;
+  height: 80px;
+  font-size: 1em;
+}
+
+/* Background Images for Alumni Boxes */
+.alumni-box:nth-child(1) .alumni-image {
+  background-image: url('../assets/female2.jpg');
+  background-size: cover;
+}
+
+.alumni-box:nth-child(2) .alumni-image {
+  background-image: url('../assets/male1.jpg');
+  background-size: cover;
+}
+
+.alumni-box:nth-child(3) .alumni-image {
+  background-image: url('../assets/female3.jpg');
+  background-size: cover;
+}
+
+.alumni-box:nth-child(4) .alumni-image {
+  background-image: url('../assets/female4.jpg'); /* Make sure this is the correct path */
+  background-size: cover;
+}
+
+.alumni-box:nth-child(5) .alumni-image {
+  background-image: url('../assets/male2.avif'); /* Make sure this is the correct path */
+  background-size: cover;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}

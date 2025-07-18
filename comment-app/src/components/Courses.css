@@ -1,0 +1,150 @@
+/* Resetting styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Specific styles for the courses page */
+.courses-page {
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.8), rgba(238, 238, 238, 0.8)); /* Subtle gradient background */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px 0;
+    animation: fadeIn 1.5s ease-in-out; /* Added fade-in animation */
+}
+
+/* Available Courses Heading */
+.courses-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #5e4545;
+    margin-bottom: 20px;
+    margin-top: 30px; /* Add margin to the top to create space */
+    text-align: center;
+    text-decoration: underline; /* Add underline */
+    text-transform: uppercase; /* Make the text uppercase for a bold look */
+    letter-spacing: 2px; /* Add letter spacing for extra flair */
+    animation: none; /* Remove the slide-in effect from the heading */
+}
+
+/* Course List Styling */
+.course-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 courses per row */
+    gap: 20px; /* Reduced gap for smaller boxes */
+    margin: 30px;
+}
+
+/* Individual Course Item */
+.course-item {
+    border-radius: 10px; /* Slightly smaller rounded corners */
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Slightly smaller shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease; /* Added filter transition */
+    cursor: pointer;
+    position: relative; /* Important for overlaying text */
+    background-size: cover; /* Make sure the image covers the whole div */
+    background-position: center; /* Keep the image centered */
+    height: 200px; /* Reduced height for smaller boxes */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px; /* Reduced padding */
+    background-color: rgba(255, 255, 255, 0.5); /* Light translucent overlay for better text contrast */
+}
+
+/* Ensure the background image is displayed properly */
+.course-item-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px; /* Slightly smaller rounded corners */
+    transition: transform 0.3s ease; /* Added transform transition */
+}
+
+/* Hover effect for the course item box */
+.course-item:hover {
+    transform: translateY(-5px) scale(1.05); /* Slight zoom on hover for a dynamic effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Slightly smaller shadow on hover */
+    filter: brightness(1.1); /* Slightly brightens the box on hover */
+}
+
+/* Hover effect for course item image */
+.course-item-image:hover {
+    transform: scale(1.05); /* Slight zoom on hover for images */
+}
+
+/* Course Title */
+.course-item-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #c6bdbd;
+    position: absolute; /* Position title on top of the image */
+    bottom: 10px; /* Position title at the bottom */
+    left: 20px; /* Position title towards the left */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Text shadow for readability */
+    animation: fadeInText 1s ease-in-out; /* Added fade-in animation for title */
+}
+
+/* Media Query for Larger Screens */
+@media (min-width: 768px) {
+    .course-list {
+        grid-template-columns: repeat(3, 1fr); /* 3 courses per row on larger screens */
+    }
+}
+
+/* Animation Keyframes */
+
+/* Fade In for Page */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Fade In for Title */
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.error-container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .error-container h2 {
+    color: red;
+    font-size: 1.5rem;
+  }
+  
+  .error-container button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .error-container button:hover {
+    background-color: #0056b3;
+  }
+  

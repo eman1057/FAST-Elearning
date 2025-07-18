@@ -1,0 +1,104 @@
+/* General Grid Layout for Course Options */
+.course-options-grid {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping to the next line */
+  gap: 30px; /* Space between boxes */
+  justify-content: center; /* Align items to the center */
+  width: 100%; /* Full width of the container */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Polaroid Style for the Course Options */
+.course-option-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f4e4e4; /* Background color for the entire card */
+  border-radius: 12px; /* Rounded corners */
+  padding: 0; /* Remove internal padding */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+  flex-basis: 24%; /* Set width to 30% to ensure 3 items per row */
+  height: 365px; /* Fixed height */
+  cursor: pointer;
+  text-align: center;
+  overflow: hidden;
+  box-sizing: border-box;
+  text-decoration: none; /* Remove underline from links */
+}
+
+/* Inner Box for the image */
+.inner-box {
+  width: 100%;
+  height: 50%; /* Match feature card image height */
+  background: #f4e4e4; /* Match feature card text background */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover; /* Ensure the image covers the area */
+  background-position: center; /* Center the image */
+}
+
+/* Course Option Image Style */
+.course-option-box:nth-child(1) .inner-box {
+  background-image: url("../assets/assignment.png");
+}
+
+.course-option-box:nth-child(2) .inner-box {
+  background-image: url("../assets/quiz.png");
+}
+
+.course-option-box:nth-child(3) .inner-box {
+  background-image: url("../assets/pp.png");
+}
+
+.course-option-box:nth-child(4) .inner-box {
+  background-image: url("../assets/cm.png");
+}
+
+.course-option-box:nth-child(5) .inner-box {
+  background-image: url("../assets/df.png");
+}
+
+.course-option-box:nth-child(6) .inner-box {
+  background-image: url("../assets/rating.png");
+}
+
+/* Outer Box for title and footer */
+.outer-box {
+  flex: 1;
+  padding: 10px 15px; /* Reduced padding for thinner boxes */
+  text-align: center;
+}
+
+/* Polaroid Title */
+.option-label {
+  font-size: 1.4em; /* Slightly smaller title for a thinner look */
+  font-weight: 600;
+  color: #333;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/* Polaroid Footer */
+.polaroid-footer {
+  font-size: 1.2em; /* Slightly smaller footer text */
+  line-height: 1.6;
+  text-align: center;
+  margin-top: 10px;
+  color: #555;
+}
+
+.course-details-page h1 {
+  font-size: 2.5rem;
+    font-weight: 700;
+    color: #5e4545;
+    margin-bottom: 20px;
+    margin-top: 30px; /* Add margin to the top to create space */
+    text-align: center;
+    text-decoration: underline; /* Add underline */
+    text-transform: uppercase; /* Make the text uppercase for a bold look */
+    letter-spacing: 2px; /* Add letter spacing for extra flair */
+    animation: none; /* Remove the slide-in effect from the heading */
+}
